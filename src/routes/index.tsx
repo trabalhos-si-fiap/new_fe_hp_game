@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { useDrawerContext } from '../shared/contexts';
 import { useEffect } from 'react';

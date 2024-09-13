@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"BROWSER=none react-scripts start\" \"npm run mock\"",
+    "start": "concurrently \"cross-env BROWSER=none react-scripts start\" \"npm run mock\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "mock": "npm exec -- json-server --port 3001 ./mock/db.json",
@@ -33,6 +33,7 @@
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
     "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.35.0",
     "globals": "^15.9.0",
