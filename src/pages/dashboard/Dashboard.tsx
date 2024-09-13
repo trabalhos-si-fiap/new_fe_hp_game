@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import {
   Box,
   Card,
@@ -46,71 +47,7 @@ export const Dashboard = () => {
   return (
     <LayoutBase
       pageTitle='Página inicial'
-      barraDeFerramentas={<ListToolBar mostrarBotaoNovo={false} />}
     >
-      <Box
-        width='100%'
-        display='flex'
-      >
-        <Grid2
-          margin={1}
-          width='100%'
-          container
-          spacing={2}
-        >
-          <Grid2 size={{ xs: 12, sm: 12, md: 6 }}>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant='h4'
-                  align='center'
-                >
-                  Total de Pessoas
-                </Typography>
-                <Box
-                  display='flex'
-                  padding={6}
-                  justifyContent='center'
-                  alignItems='center'
-                >
-                  {isLoadingPessoas ? (
-                    <>
-                      <CircularProgress variant='indeterminate' />
-                    </>
-                  ) : (
-                    <Typography variant='h2'>{totalPessoas}</Typography>
-                  )}
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid2>
-
-          <Grid2 size={{ xs: 12, sm: 12, md: 6 }}>
-            <Card>
-              <CardContent>
-                <Typography
-                  variant='h4'
-                  align='center'
-                >
-                  Total de Cidades
-                </Typography>
-                <Box
-                  display='flex'
-                  padding={6}
-                  justifyContent='center'
-                  alignItems='center'
-                >
-                  {isLoadingCidades ? (
-                    <CircularProgress variant='indeterminate' />
-                  ) : (
-                    <Typography variant='h2'>{totalCidades}</Typography>
-                  )}
-                </Box>
-              </CardContent>
-            </Card>
-          </Grid2>
-        </Grid2>
-      </Box>
     </LayoutBase>
   );
 };

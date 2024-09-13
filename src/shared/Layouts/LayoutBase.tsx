@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/react-in-jsx-scope */
 import {
   Box,
   IconButton,
@@ -18,7 +20,6 @@ interface ILayoutBaseProps {
 export const LayoutBase: React.FC<ILayoutBaseProps> = ({
   children,
   pageTitle,
-  barraDeFerramentas,
 }) => {
   const theme = useTheme();
   const smDown = useMediaQuery(theme.breakpoints.down('sm'));
@@ -54,8 +55,7 @@ export const LayoutBase: React.FC<ILayoutBaseProps> = ({
           {pageTitle}
         </Typography>
       </Box>
-      {barraDeFerramentas && <Box>{barraDeFerramentas}</Box>}
-
+    
       <Box
         flex={1} // para ocupar todo o espaço restante
         overflow="auto" // scroll somente nesse box
