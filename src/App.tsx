@@ -1,6 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { BrowserRouter } from 'react-router-dom';
 import { AppRoutes } from './routes';
-import { MenuLateral } from './shared/components/menu-lateral/MenuLateral';
 import {
   DrawerProvider,
   AppThemeProvider,
@@ -17,9 +17,7 @@ export const App = () => {
         <Login>
           <DrawerProvider>
             <BrowserRouter>
-              <MenuLateral>
-                <AppRoutes />
-              </MenuLateral>
+                <AppRoutes />        
             </BrowserRouter>
           </DrawerProvider>
         </Login>

@@ -42,6 +42,7 @@ export const AppRoutes = () => {
         element={<Dashboard />}
       />
 
+
       <Route
         path='/pessoas'
         element={<ListagemDePessoas />}

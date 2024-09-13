@@ -1,6 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
 import {
   Box,
+  Button,
   Card,
   CardContent,
   CircularProgress,
@@ -46,8 +48,9 @@ export const Dashboard = () => {
 
   return (
     <LayoutBase
-      pageTitle='Página inicial'
-    >
+      pageTitle='Página inicial'>
+         <Button variant='contained' color='primary'>Teste</Button>
+         <Button variant='contained' color='secondary'>Teste</Button>
     </LayoutBase>
   );
 };
